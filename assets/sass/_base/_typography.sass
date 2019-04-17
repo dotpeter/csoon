@@ -1,0 +1,107 @@
+body,
+button,
+input,
+select,
+textarea
+  font-family: $lato
+
+h1, h2, h3, h4, h5, h6
+  font-family: $roboto
+  font-weight: 700
+  margin: 0
+  clear: both
+
+h1
+
+h2
+
+h3
+
+h4
+
+h5
+
+h6
+
+p
+  margin: 0 0 20px 0
+  color: $dark-grey
+
+
+dfn, cite, em, i
+  font-style: italic
+
+blockquote
+  position: relative
+  width: fit-content
+  margin: 20px 20px 40px
+  font-style: italic
+  padding: 40px
+  border: 1px solid red
+  border-left: 2px solid $primary-color
+  background-color: white
+  &:before,
+  &:after
+    content: ""
+  &:before
+    position: absolute
+    top: -20px
+    left: 10px
+    //font-family: fontAwesome
+    content: "\f10d"
+    font-size: 46px
+    color: red
+    display: block
+
+q
+  font-style: italic
+  quotes: '\201C' '\201D' '\0022' '\0022'
+  &:before,
+  &:after
+    content: ""
+
+address
+  margin: 0 0 1.5em
+
+pre
+  background: white
+  font-family: $font__pre
+  @include font-size(0.9375)
+  line-height: $font__line-height-pre
+  margin-bottom: 1.6em
+  max-width: 100%
+  overflow: auto
+  padding: 1.6em
+  white-space: pre-wrap
+  word-wrap: break-word
+
+code, kbd, tt, var
+  font-family: "Lucida Console", Monaco, monospace
+  @include font-size(0.8)
+
+code
+  background-color: white
+  padding: 6px
+  display: inline-block
+  word-wrap: break-word
+  word-break: keep-all
+
+abbr, acronym
+  cursor: help
+
+mark, ins
+  background: white
+  text-decoration: none
+
+big
+  font-size: 125%
+
+.section-title
+  font-size: 50px
+  color: $primary-color
+  margin-bottom: 20px
+
+.section-description
+  font-size: 20px
+  margin-bottom: 40px
+  font-weight: lighter

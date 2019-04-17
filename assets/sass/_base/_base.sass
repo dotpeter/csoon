@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+html,
+body
+  margin: 0
+  padding: 0
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  scroll-behavior: smooth
+
+/* width */
+::-webkit-scrollbar
+    width: 10px
+
+
+/* Track */
+::-webkit-scrollbar-track
+    //box-shadow: inset 0 0 5px grey
+    //border-radius: 10px
+    //background: rgb(241, 241, 241)
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: rgb(213, 213, 213)
+    //border-radius: 10px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+    background: $primary-color
+
+::selection
+  background-color: $primary-color
+  color: white
+
+@media (max-width: 600px)
+  #wpadminbar
+    position: fixed !important
+
+@import "_grid"
+@import "_typography"
+@import "_links"
+@import "_buttons"
+@import "_lists"
+@import "_tables"
+@import "_forms"
+@import "_formatting"
+@import "_accessibility"
+@import "_alignments"
+@import "_clearings"
+@import "_media"
